@@ -46,7 +46,7 @@
 
 
 </div>
-            <script src="app.js"></script>
+            
           </div>
 
 
@@ -85,20 +85,22 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-plus circle m-2"></i>Editar</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="text" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">TITLE</label>
-              <input type="text" class="form-control" id="titulo" placeholder="titulo">
+              <input type="button" class="form-control" id="etitle" placeholder="titulo">
             </div>
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">BODY</label>
-              <textarea class="form-control" id="body" rows="3"></textarea>
+              <textarea class="form-control" id="ebody" rows="3"></textarea>
+              <input type="hidden" id="eid" value="0">
+              <input type="hidden" id="euserid" value="0">
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" onclick="addPost()" >GUARDAR</button>
+            <button type="button" class="btn btn-success" onclick="guardarPost()" >GUARDAR</button>
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCELAR</button>
           </div>
         </div>
@@ -115,9 +117,10 @@
           </div>
           <div class="modal-body">
           <h2>¿ESTAS SEGURO DE ELIMINAR ESTE POST?</h2>
+          <input type="hidden" name="" id="deleteid">
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" >No</button>
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Si</button>
+            <button type="button" class="btn btn-danger"data-bs-dismiss="modal" >No</button>
+            <button type="button" class="btn btn-success" onclick="deletePost()">Si</button>
           </div>
         </div>
       </div>
