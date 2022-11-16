@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRIPTOMONEDAS</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body onload="opcionesCriptomoneda()">
+    <center>
+    <div class="contenedor">
+        <div class="row">
+            <div class="one-half column">
+                <h1 class="head">COTIZACRIPTOMONEDAS AL INSTANTE</h1>
+            <form>
+            <div id="msj-error"></div>
+            <label>ELIGE TU MONEDA</label><br>
+            <select onchange="cotizarMoneda()" id="moneda">
+            <option value="">-SELECCIONE-</option>
+            <option value="USD">DOLAR DE E.U</option>
+            <option value="MXN">PESO MEXICANO</option>
+            <option value="EUR">EURO</option>
+            <option value="GBP">LIBRA ESTERLINA</option>
+            </select><br>
+            <label>ELIGE TU CRIPTOMONEDA</label><br>
+            <select onchange="cotizarMoneda()" id="criptomoneda">
+
+            </select><br>
+            <button type="button" class="boton" onclick="cotizarMoneda()">
+            CALCULAR
+            </button>
+            </form>
+            <div class="resultado" id="divResultado"></div>
+            </div>
+        </div>
+    </div>
+</center>
+    <script src="app.js"></script>
+</body>
+</html>
