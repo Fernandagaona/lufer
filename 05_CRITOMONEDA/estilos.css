@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    background-image: url("cripto.jpg"); 
+    background-position: center 25%; 
+    background-size: cover; 
+} 
+#titu{
+    color: blanchedalmond;
+}
+#titulo{
+    font-size: 50px;
+    color: blanchedalmond;
+}
