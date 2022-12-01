@@ -136,7 +136,7 @@ btnCrear.addEventListener("click", async (e) => {
         text: "Password Invalida!",
       });
     }
-    if (code == "auth/email-already-in-user") {
+    if (code == "auth/email-already-in-use") {
       Swal.fire({
         icon: "error",
         text: "Email Ya Esta Registrado!",
